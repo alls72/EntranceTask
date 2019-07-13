@@ -7,7 +7,7 @@ function Animal(type, name) {
         this.name = name.toString();
 
     this.Run = function(distance) {
-        if(typeof distance == "number" && distance >= 0)
+        if(typeof distance === "number" && distance >= 0)
             console.log('Животное пробежало ' + distance + '  метров');
         else{
             throw new Error('Неверно указана дистанция');
@@ -52,7 +52,7 @@ class AnimalES6 {
     }
 
     Run(distance){
-        if(typeof distance == "number" && distance >= 0)
+        if(typeof distance === "number" && distance >= 0)
             console.log('Животное пробежало ' + distance + '  метров');
         else{
             throw new Error('Неверно указана дистанция');
